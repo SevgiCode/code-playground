@@ -1,0 +1,458 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #041e42;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #ff0055, #ffcc00),
+    url("https://via.placeholder.com/1920x1080") no-repeat center center / cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  background: url("https://via.placeholder.com/500x500/000000?text=Spray")
+    no-repeat center center / contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.hero h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.cta {
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta:hover {
+  transform: scale(1.1);
+  background: #ffcc00;
+  color: #000;
+}
+
+/* Courses Section */
+.courses {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.courses h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.course-card {
+  display: inline-block;
+  background: #f9f9f9;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #041e42;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  color: #041e42;
+}
+
+.course-card p {
+  font-size: 1rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #041e42;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background: #041e42;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background: #ffcc00;
+  color: #041e42;
+}
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #041e42;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background: #041e42;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background: #ffcc00;
+  color: #041e42;
+}
+
+/* Footer */
+footer {
+  background: url("https://via.placeholder.com/1920x300/ffcc00?text=Pattern")
+    no-repeat center center / cover;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ff0055;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.courses {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.courses h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.course-card {
+  display: inline-block;
+  background: #f9f9f9;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #041e42;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  color: #041e42;
+}
+
+.course-card p {
+  font-size: 1rem;
+}
+.about {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #041e42;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #041e42;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #ff0055, #ffcc00),
+    url("https://via.placeholder.com/1920x1080") no-repeat center center / cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  background: url("https://via.placeholder.com/500x500/000000?text=Spray")
+    no-repeat center center / contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.hero h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.cta {
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta:hover {
+  transform: scale(1.1);
+  background: #ffcc00;
+  color: #000;
+}
+
+/* Courses Section */
+.courses {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.courses h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.course-card {
+  display: inline-block;
+  background: #f9f9f9;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #041e42;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  color: #041e42;
+}
+
+.course-card p {
+  font-size: 1rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #041e42;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background: #041e42;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background: #ffcc00;
+  color: #041e42;
+}

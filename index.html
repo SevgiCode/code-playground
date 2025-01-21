@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Playground</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Base Styles */
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #f0f0f0;
+        overflow-x: hidden;
+      }
+
+      /* Navbar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #041e42;
+        color: white;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(120deg, #ff0055, #ffcc00),
+          url("https://via.placeholder.com/1920x1080") no-repeat center center /
+            cover;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+      }
+
+      .hero::after {
+        content: "";
+        background: url("https://via.placeholder.com/500x500/000000?text=Spray")
+          no-repeat center center / contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+        z-index: -1;
+      }
+
+      .hero h1 {
+        font-family: "Press Start 2P", cursive;
+        font-size: 4rem;
+        margin: 0;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+      }
+
+      .cta {
+        background: #000;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+
+      .cta:hover {
+        transform: scale(1.1);
+        background: #ffcc00;
+        color: #000;
+      }
+
+      /* Courses Section */
+      .courses {
+        padding: 50px 20px;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      .courses h2 {
+        font-family: "Press Start 2P", cursive;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .course-card {
+        display: inline-block;
+        background: #f9f9f9;
+        margin: 10px;
+        padding: 20px;
+        border: 2px solid #041e42;
+        border-radius: 10px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .course-card h3 {
+        font-size: 1.5rem;
+        margin: 0 0 10px;
+        color: #041e42;
+      }
+
+      .course-card p {
+        font-size: 1rem;
+      }
+
+      /* Contact Section */
+      .contact {
+        padding: 50px 20px;
+        background-color: #f0f0f0;
+        text-align: center;
+      }
+
+      .contact h2 {
+        font-family: "Press Start 2P", cursive;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .contact form {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact form label {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        display: block;
+        color: #041e42;
+      }
+
+      .contact form input,
+      .contact form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact form button {
+        background: #041e42;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact form button:hover {
+        background: #ffcc00;
+        color: #041e42;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="./courses.html">Courses</a>
+      <a href="./about.html">About</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Code Playground</h1>
+      <p>Learn, Create, and Share Your Code with Style!</p>
+      <a href="./courses.html">
+        <button class="cta">Start Learning Now</button>
+      </a>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+      <h2>Our Courses</h2>
+      <div class="course-card">
+        <h3>HTML</h3>
+        <p>Learn the structure of the web and build your foundation.</p>
+      </div>
+      <div class="course-card">
+        <h3>CSS</h3>
+        <p>Style your websites with stunning visuals and layouts.</p>
+      </div>
+      <div class="course-card">
+        <h3>JavaScript</h3>
+        <p>Bring interactivity and functionality to your projects.</p>
+      </div>
+      <div class="course-card">
+        <h3>React</h3>
+        <p>Create modern web applications with this powerful library.</p>
+      </div>
+      <div class="course-card">
+        <h3>C#</h3>
+        <p>Build desktop and game applications with this versatile language.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+          background-color: #041e42;
+          color: white;
+          flex-wrap: wrap;
+        "
+      >
+        <!-- Left Section: Logo -->
+        <div style="flex: 1; min-width: 200px">
+          <h3>Code Playground</h3>
+          <p>Learn, Create, and Share Your Code with Style!</p>
+        </div>
+
+        <!-- Center Section: Links -->
+        <div style="flex: 1; text-align: center; min-width: 200px">
+          <h4>Quick Links</h4>
+          <a
+            href="#courses"
+            style="color: #ffcc00; text-decoration: none; display: block"
+            >Courses</a
+          >
+          <a
+            href="#about"
+            style="color: #ffcc00; text-decoration: none; display: block"
+            >About</a
+          >
+        </div>
+
+        <!-- Right Section: Contact Info -->
+        <div style="flex: 1; text-align: right; min-width: 200px">
+          <h4>Contact Us</h4>
+          <p>Email: support@codeplayground.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Address: 123 Coding Street, Web City</p>
+        </div>
+      </div>
+      <div
+        style="
+          text-align: center;
+          background-color: #033568;
+          padding: 10px;
+          color: white;
+        "
+      >
+        &copy; 2025 Code Playground. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

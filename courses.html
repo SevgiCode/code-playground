@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | Code Playground</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Base Styles */
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #f0f0f0;
+        overflow-x: hidden;
+      }
+
+      /* Navbar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #041e42;
+        color: white;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Courses Section */
+      .courses {
+        padding: 50px 20px;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      .courses h2 {
+        font-family: "Press Start 2P", cursive;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .course-card {
+        display: inline-block;
+        background: #f9f9f9;
+        margin: 10px;
+        padding: 20px;
+        border: 2px solid #041e42;
+        border-radius: 10px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .course-card h3 {
+        font-size: 1.5rem;
+        margin: 0 0 10px;
+        color: #041e42;
+      }
+
+      .course-card p {
+        font-size: 1rem;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #041e42;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer a {
+        color: #ffcc00;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      footer .footer-links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 0;
+      }
+
+      footer .footer-section {
+        flex: 1;
+        min-width: 200px;
+        padding: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+      <h2>Our Courses</h2>
+      <div class="course-card">
+        <h3>HTML</h3>
+        <p>Learn the structure of the web and build your foundation.</p>
+        <a href="./courses/HTML Course.rar" download="HTML Course.rar">
+          <button>Download</button>
+        </a>
+      </div>
+      <div class="course-card">
+        <h3>CSS</h3>
+        <p>Style your websites with stunning visuals and layouts.</p>
+        <a href="./courses/CSS Course.rar" download="CSS Course.rar">
+          <button>Download</button>
+        </a>
+      </div>
+      <div class="course-card">
+        <h3>JavaScript</h3>
+        <p>Bring interactivity and functionality to your projects.</p>
+        <a href="./courses/JS Course.rar" download="JS Course.rar">
+          <button>Download</button>
+        </a>
+      </div>
+      <br />
+      <div class="course-card">
+        <h3>React</h3>
+        <p>Comming Soon.</p>
+        <!-- <button onclick="location.href='react_course.pdf'">Download</button> -->
+      </div>
+      <div class="course-card">
+        <h3>C#</h3>
+        <p>Comming Soon.</p>
+        <!-- <button onclick="location.href='csharp_course.pdf'">Download</button> -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-links">
+        <!-- Left Section -->
+        <div class="footer-section">
+          <h3>Code Playground</h3>
+          <p>Learn, Create, and Share Your Code with Style!</p>
+        </div>
+
+        <!-- Center Section -->
+        <div class="footer-section" style="text-align: center">
+          <h4>Quick Links</h4>
+          <a href="#courses">Courses</a><br />
+          <a href="#about">About</a><br />
+        </div>
+
+        <!-- Right Section -->
+        <div class="footer-section" style="text-align: right">
+          <h4>Contact Us</h4>
+          <p>Email: support@codeplayground.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Address: 123 Coding Street, Web City</p>
+        </div>
+      </div>
+      <div>&copy; 2025 Code Playground. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
